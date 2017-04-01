@@ -1,0 +1,12 @@
+from android studio terminal:
+
+1) change path to C:\Users\UserName\AppData\Local\Android\sdk\platform-tools>
+2) adb backup  -f backupFile.ab  com.tayqa.tms (here should be app's package name)
+
+Note before next step:
+3) abe.jar file should be added to C:\Users\UserName\AppData\Local\Android\sdk\platform-tools>
+
+4) java.exe -jar abe.jar unpack backupFile.ab tayqaTms.tar ""  (Note that this file will be created in
+ C:\Users\UserName\AppData\Local\Android\sdk\platform-tools>) 
+
+5) then extract that file and find db folder (database is located iniside db folder)
